@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+<meta name="description" content="Contact FG Technology Search for technology recruiting and career opportunities.">
+<title>Contact | FG Technology Search</title>
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html" aria-label="FG Technology Search home">
+    <span class="brand-mark" aria-hidden="true">FG</span>
+    <span class="brand-copy">
+      <strong>TECHNOLOGY SEARCH</strong>
+      <small>TECHNOLOGY TALENT. BUSINESS IMPACT.</small>
+    </span>
+  </a>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+    <span></span><span></span><span></span><span class="sr-only">Toggle navigation</span>
+  </button>
+  <nav id="main-nav" class="main-nav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="employers.html">Employers</a>
+    <a href="candidates.html">Candidates</a>
+    <a href="expertise.html">Expertise</a>
+    <a href="index.html#insights">Insights</a>
+    <a class="nav-cta" href="contact.html">Contact Us <span aria-hidden="true">→</span></a>
+  </nav>
+</header>
+<main>
+<section class="contact-hero">
+  <div>
+    <p class="eyebrow">CONTACT FG TECHNOLOGY SEARCH</p>
+    <h1>Start a Conversation.</h1>
+    <p>Whether you're building a technology team or considering your next career move, we'd like to hear from you.</p>
+  </div>
+</section>
+
+<section class="contact-main">
+  <div class="contact-info">
+    <p class="section-kicker">CONNECT</p>
+    <h2>FG Technology Search</h2>
+    <p>Orlando, Florida</p>
+    <p><a href="mailto:contact@fgtechsearch.com">contact@fgtechsearch.com</a></p>
+    <div class="contact-note"><strong>For Employers</strong><p>Tell us about the role, technical requirements, location, compensation range, and where the search has been challenging.</p></div>
+    <div class="contact-note"><strong>For Candidates</strong><p>Tell us about your background, areas of expertise, current career interests, and the types of opportunities you want to explore.</p></div>
+  </div>
+
+  <form class="contact-form" action="https://formspree.io/f/xjyvoeab" method="POST">
+    <div class="form-row">
+      <label>First Name<input type="text" name="First Name" required></label>
+      <label>Last Name<input type="text" name="Last Name" required></label>
+    </div>
+    <label>Email Address<input type="email" name="Email" required></label>
+    <label>Phone Number<input type="tel" name="Phone"></label>
+    <label>I am contacting FG as
+      <select name="Contact Type" required>
+        <option value="">Select one</option>
+        <option>Employer / Hiring Leader</option>
+        <option>Candidate / Technology Professional</option>
+        <option>Other</option>
+      </select>
+    </label>
+    <label>Company / Organization<input type="text" name="Company"></label>
+    <label>How can we help?<textarea name="Message" rows="7" required></textarea></label>
+    <button class="btn btn-navy" type="submit">Send Message <span>→</span></button>
+    <p class="form-disclaimer">Your information will be submitted securely through our contact form and used only to respond to your inquiry.</p>
+  </form>
+</section>
+</main>
+<style>
+.contact-hero{padding:92px 6vw;background:linear-gradient(110deg,#0b2342,#173f6b);color:#fff}.contact-hero>div{max-width:850px}.contact-hero h1{font-size:clamp(50px,5vw,78px);line-height:1;letter-spacing:-.05em;margin:0 0 18px}.contact-hero p:not(.eyebrow){font-size:19px;line-height:1.6;color:#e7eef5;max-width:720px}
+.contact-main{padding:76px 6vw;display:grid;grid-template-columns:.75fr 1.25fr;gap:90px;max-width:1400px;margin:0 auto}.contact-info h2{font-size:38px;margin:0 0 18px}.contact-info>p{font-size:16px;color:#4e6277}.contact-info a{color:var(--navy);font-weight:750}.contact-note{margin-top:34px;padding-top:24px;border-top:1px solid var(--line)}.contact-note strong{font-size:17px}.contact-note p{color:#5b6f86;line-height:1.65}
+.contact-form{background:#f7f9fb;padding:34px;display:grid;gap:20px}.contact-form label{display:grid;gap:8px;font-size:12px;font-weight:800;letter-spacing:.03em;color:var(--ink)}.contact-form input,.contact-form select,.contact-form textarea{width:100%;border:1px solid #cbd6e2;background:#fff;border-radius:4px;padding:13px 14px;font:inherit;color:var(--ink)}.contact-form input:focus,.contact-form select:focus,.contact-form textarea:focus{outline:2px solid rgba(16,43,79,.18);border-color:var(--navy)}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:18px}.contact-form .btn{justify-self:start}.form-disclaimer{font-size:11px;color:#6d7f91;margin:0}
+@media(max-width:850px){.contact-main{grid-template-columns:1fr;gap:45px}}
+@media(max-width:600px){.contact-hero,.contact-main{padding-left:28px;padding-right:28px}.form-row{grid-template-columns:1fr}.contact-form{padding:24px}}
+</style>
+<footer class="site-footer">
+  <div class="footer-brand">
+    <a class="brand brand-footer" href="index.html">
+      <span class="brand-mark">FG</span>
+      <span class="brand-copy">
+        <strong>TECHNOLOGY SEARCH</strong>
+        <small>TECHNOLOGY TALENT. BUSINESS IMPACT.</small>
+      </span>
+    </a>
+  </div>
+  <div class="footer-links">
+    <strong>Quick Links</strong>
+    <a href="about.html">About Us</a>
+    <a href="employers.html">Employers</a>
+    <a href="candidates.html">Candidates</a>
+    <a href="expertise.html">Expertise</a>
+    <a href="index.html#insights">Insights</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div class="footer-contact">
+    <strong>Connect</strong>
+    <p>Orlando, Florida</p>
+    <a href="mailto:contact@fgtechsearch.com">contact@fgtechsearch.com</a>
+  </div>
+  <div class="footer-statement"><span></span><p>PEOPLE<br>TECHNOLOGY<br>OPPORTUNITY<br>A BRIGHTER TOMORROW</p></div>
+  <div class="footer-bottom">
+    <p>© <span id="year"></span> FG Technology Search. All Rights Reserved.</p>
+    <div><a href="privacy.html">Privacy Policy</a><span>|</span><a href="terms.html">Terms of Use</a></div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
