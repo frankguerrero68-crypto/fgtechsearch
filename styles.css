@@ -367,31 +367,72 @@ img,svg{display:block}
 }
 
 
-/* Exact FG Technology Search logo lockup used in homepage header */
-.site-header .brand-image{
+/* FG hybrid header: exact approved monogram asset + crisp live text */
+.site-header .brand-hybrid{
   display:flex;
   align-items:center;
-  min-width:0;
-  gap:0;
+  gap:11px;
+  min-width:max-content;
 }
-.site-header .brand-lockup{
+
+.site-header .brand-monogram-wrap{
+  width:72px;
+  height:46px;
+  flex:0 0 72px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.site-header .brand-monogram{
   display:block;
-  width:clamp(250px,18vw,320px);
-  height:auto;
+  width:100%;
+  height:100%;
   object-fit:contain;
 }
-@media (max-width:1100px){
-  .site-header .brand-lockup{
-    width:235px;
-  }
+
+.site-header .brand-divider{
+  width:1px;
+  height:40px;
+  background:#8fa0b2;
+  flex:0 0 1px;
 }
+
+.site-header .brand-hybrid .brand-copy{
+  display:grid;
+  gap:1px;
+}
+
+.site-header .brand-hybrid .brand-copy strong{
+  font-size:16px;
+  line-height:1.02;
+  letter-spacing:.025em;
+}
+
+.site-header .brand-hybrid .brand-copy small{
+  font-size:8px;
+  line-height:1.15;
+  letter-spacing:.08em;
+  font-weight:700;
+  color:#50637a;
+}
+
 @media (max-width:800px){
-  .site-header .brand-lockup{
-    width:205px;
+  .site-header .brand-monogram-wrap{
+    width:63px;
+    height:41px;
+    flex-basis:63px;
   }
-}
-@media (max-width:520px){
-  .site-header .brand-lockup{
-    width:178px;
+
+  .site-header .brand-divider{
+    height:35px;
+  }
+
+  .site-header .brand-hybrid .brand-copy strong{
+    font-size:13px;
+  }
+
+  .site-header .brand-hybrid .brand-copy small{
+    font-size:7px;
   }
 }
