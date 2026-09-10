@@ -67,10 +67,15 @@
 </header>
 <main>
 <section class="about-hero">
-  <div>
+  <div class="about-hero-copy">
     <p class="eyebrow">ABOUT FG TECHNOLOGY SEARCH</p>
     <h1>Technology Search.<br>Informed by Experience.</h1>
     <p>FG Technology Search was built around a simple idea: finding exceptional technology talent is easier when the search partner truly understands the technology.</p>
+  </div>
+  <div class="about-hero-panel">
+    <p class="panel-kicker">OUR APPROACH</p>
+    <h2>Technology recruiting informed by real enterprise experience.</h2>
+    <p>We bring technical context into the search process so employers get stronger alignment and candidates have more meaningful conversations.</p>
   </div>
 </section>
 
@@ -109,14 +114,20 @@
 </section>
 </main>
 <style>
-.about-hero{padding:95px 6vw;background:linear-gradient(110deg,#0b2342,#173f6b);color:#fff}
-.about-hero>div{max-width:880px}.about-hero h1{font-size:clamp(48px,5vw,78px);line-height:.98;letter-spacing:-.05em;margin:0 0 22px}.about-hero p:not(.eyebrow){font-size:19px;line-height:1.6;max-width:760px;color:#e7eef5}
+.about-hero{display:grid;grid-template-columns:1.15fr .85fr;min-height:520px;background:linear-gradient(110deg,#0b2342,#173f6b);color:#fff}
+.about-hero-copy{padding:90px 6vw;display:flex;flex-direction:column;justify-content:center}
+.about-hero-copy h1{font-size:clamp(48px,5vw,78px);line-height:.98;letter-spacing:-.05em;margin:0 0 22px}
+.about-hero-copy>p:not(.eyebrow){font-size:19px;line-height:1.6;max-width:760px;color:#e7eef5;margin:0}
+.about-hero-panel{background:#eef3f8;color:var(--ink);padding:72px 5vw;display:flex;flex-direction:column;justify-content:center}
+.about-hero-panel .panel-kicker{font-size:11px;font-weight:800;letter-spacing:.18em;color:#60758c;margin:0 0 14px}
+.about-hero-panel h2{font-size:clamp(31px,3vw,48px);line-height:1.05;letter-spacing:-.04em;margin:0 0 20px}
+.about-hero-panel p:last-child{color:#52677d;font-size:16px;line-height:1.7;margin:0}
 .about-story{padding:76px 6vw;display:grid;grid-template-columns:360px 1fr;gap:80px;align-items:center}.about-photo img{width:100%;height:auto;display:block;object-fit:contain;box-shadow:var(--shadow);border-radius:50%}
 .about-story h2,.about-values h2,.about-positioning h2,.about-cta h2{font-size:clamp(34px,3vw,50px);line-height:1.02;letter-spacing:-.04em;margin:0 0 18px}.about-story article>p:not(.section-kicker){font-size:16px;line-height:1.72;color:#4e6277;max-width:800px}
 .about-values{padding:76px 6vw;background:#f7f9fb}.values-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:36px}.values-grid article{background:#fff;padding:28px 24px;border-top:3px solid var(--navy)}.values-grid span{font-size:11px;letter-spacing:.15em;color:var(--slate);font-weight:800}.values-grid h3{margin:8px 0 10px}.values-grid p{margin:0;color:#5b6f86;font-size:13px;line-height:1.6}
 .about-positioning{padding:72px 6vw;display:grid;grid-template-columns:.8fr 1.2fr;gap:80px;align-items:start}.about-positioning>p{font-size:17px;line-height:1.75;color:#4e6277;max-width:800px;margin:0}
 .about-cta{padding:72px 6vw;background:#24486f;color:#fff;display:flex;justify-content:space-between;align-items:center;gap:50px}.about-cta .section-kicker{color:#fff}
-@media(max-width:900px){.about-story,.about-positioning{grid-template-columns:1fr;gap:36px}.about-photo{max-width:420px}.values-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:900px){.about-hero{grid-template-columns:1fr}.about-hero-panel{padding:52px 6vw}.about-story,.about-positioning{grid-template-columns:1fr;gap:36px}.about-photo{max-width:420px}.values-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:650px){.about-hero,.about-story,.about-values,.about-positioning,.about-cta{padding-left:28px;padding-right:28px}.values-grid{grid-template-columns:1fr}.about-cta{align-items:flex-start;flex-direction:column}}
 </style>
 <footer class="site-footer">
