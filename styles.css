@@ -139,12 +139,20 @@ img,svg{display:block}
 .values{align-self:center;color:var(--navy);font-size:10px;letter-spacing:.14em}
 .values span{display:block;width:38px;height:1px;background:var(--navy);margin-bottom:19px}
 .values p{margin:8px 0}
-.founder-card{position:relative;background:#fff;aspect-ratio:1 / 1;min-height:0;overflow:hidden;border-radius:50%;box-shadow:var(--shadow)}
+.founder-card{
+  position:relative;
+  background:transparent;
+  min-height:0;
+  overflow:visible;
+  box-shadow:none;
+}
 .founder-photo{
   width:100%;
-  height:100%;
+  height:auto;
+  display:block;
   object-fit:contain;
   border-radius:50%;
+  box-shadow:var(--shadow);
 }
 .founder-caption{display:none}
 .founder-caption strong,.founder-caption span{display:block}
